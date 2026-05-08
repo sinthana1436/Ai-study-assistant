@@ -9,22 +9,25 @@ if st.button("click"):
    else:
          st.warning("please give your name")
 st.divider()
+answer = {"gravity":"gravity is an ","water":"needed for life"}
+def answer_question(question):
+
+    q = question.lower()
+
+    for key in answers:
+
+        if key in q:
+
+            return answers[key]
+
+    return "I don't know this answer yet."
 question = st.text_input("ask yours doublt!")
 if st.button("submit"):
    if question:
-      q=question.lower()
-      if "gravity" in q:
-         st.success("gravity is my world")
-      elif "water" in q:
-         st.success("water makes life")
-      else:
-         st.info("i dont't know the answer")
-   else:
-      st.warning(" enter somthing ")
-st.divider()
-topics=["gravity","AP","python"]
-st.subheader("available topics")
-for topic in topics:
-   st.write(topic)
+      answer = answer_question(question)
 
+        st.success(answer)
+
+   else:
+        st.warning("Please enter a question.")
    
