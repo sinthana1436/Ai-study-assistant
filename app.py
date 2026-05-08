@@ -5,11 +5,11 @@ st.write("your ai mentor")
 name = st.text_input("what is your good name")
 if st.button("click"):
    if name:
-      st.success(f"hi{name}♡ welcome to studyz")
+      st.success(f"hi {name}♡ welcome to studyz")
    else:
          st.warning("please give your name")
 st.divider()
-answer = {"gravity":"gravity is an ","water":"needed for life"}
+answers = {"gravity":"gravity is an ","water":"needed for life"}
 def answer_question(question):
 
     q = question.lower()
