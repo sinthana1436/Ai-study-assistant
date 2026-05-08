@@ -21,5 +21,10 @@ if st.button("submit"):
          st.info("i dont't know the answer")
    else:
       st.warning(" enter somthing ")
+st.divider()
+topics=["gravity","AP","python"]
+st.subheader("available topics")
+for topic in topics:
+   st.write(topic)
 
    
