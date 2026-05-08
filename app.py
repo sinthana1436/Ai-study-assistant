@@ -11,7 +11,7 @@ if st.button("click"):
 st.divider()
 question = st.text_input("ask yours doublt!")
 if question:
-   st.write("you asked:"question)
+   st.write("you asked":,question)
    st.info("your ai mentor in on his way")
 
    
