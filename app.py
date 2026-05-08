@@ -10,8 +10,16 @@ if st.button("click"):
          st.warning("please give your name")
 st.divider()
 question = st.text_input("ask yours doublt!")
-if question:
-   st.write("you asked:",question)
-   st.info("your ai mentor in on his way")
+if st.button("submit"):
+   if question:
+      q=question.lower()
+      if gravity in q:
+         st.success("gravity is my world")
+      elif water in q:
+         st.success("water makes life")
+      else:
+         st.info("i dont't know the answer")
+   else:
+      st.warning(" enter somthing ")
 
    
