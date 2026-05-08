@@ -9,18 +9,19 @@ if st.button("click"):
    else:
          st.warning("please give your name")
 st.divider()
-answers = {"gravity":"gravity is an ","water":"needed for life"}
 def answer_question(question):
+   api_key=
+   URL =
+   headers ={"authorisation":f"bearer{api_key}"}
+   data={"questions":question}
+   response=requests.post(URL,headers=headers,json=data)
+   result=response.json()
+   try:
+      return result["answer"]
+   except:
+      return "i don't know"
 
-    q = question.lower()
-
-    for key in answers:
-
-        if key in q:
-
-           return answers[key]
-
-    return "I don't know this answer yet."
+    
 question = st.text_input("ask yours doublt!")
 if st.button("submit"):
    if question:
