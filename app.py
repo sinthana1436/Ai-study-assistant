@@ -13,9 +13,9 @@ question = st.text_input("ask yours doublt!")
 if st.button("submit"):
    if question:
       q=question.lower()
-      if gravity in q:
+      if "gravity" in q:
          st.success("gravity is my world")
-      elif water in q:
+      elif "water" in q:
          st.success("water makes life")
       else:
          st.info("i dont't know the answer")
