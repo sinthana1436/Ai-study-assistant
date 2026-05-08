@@ -26,8 +26,8 @@ if st.button("submit"):
    if question:
       answer = answer_question(question)
 
-        st.success(answer)
+      st.success(answer)
 
    else:
-        st.warning("Please enter a question.")
+      st.warning("Please enter a question.")
    
