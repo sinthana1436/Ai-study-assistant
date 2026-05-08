@@ -7,5 +7,5 @@ if st.button("click"):
    if name:
       st.success(f"hi{name}♡ welcome to studyz")
   else:
-     st.warning("please give your name")
+      st.warning("please give your name")
    
