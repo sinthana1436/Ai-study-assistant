@@ -18,7 +18,7 @@ def answer_question(question):
 
         if key in q:
 
-            return answers[key]
+    return answers[key]
 
     return "I don't know this answer yet."
 question = st.text_input("ask yours doublt!")
