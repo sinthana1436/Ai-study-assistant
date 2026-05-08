@@ -8,4 +8,5 @@ if st.button("click"):
       st.success(f"hi{name}♡ welcome to studyz")
    else:
          st.warning("please give your name")
+st.divider()
    
