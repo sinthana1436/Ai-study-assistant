@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 st.title("Studyz")
 st.write("your ai mentor")
