@@ -5,7 +5,7 @@ from datetime import date
 
 
 
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="AIzaSyALYKsMhqAhLopx9IXf1jFkeTpvx3KPJd0")
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
