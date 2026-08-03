@@ -1,12 +1,4 @@
-import streamlit as st
-import requests
-
-st.title("Studyz")
-st.write("your ai mentor")
-name = st.text_input("what is your good name")
-if st.button("click"):
-   if name:
-      st.success(f"hi {name}♡ welcome to studyz")
-   else:
-      st.warning("please give your name")
-   
+import streamlit as st 
+import google.generativeai as genai
+import sqlite3  
+from date time import date 
